@@ -1165,3 +1165,14 @@ input, select, textarea{ max-width:100%; min-width:0; }
   .nav__act .btn{ width:100%; }
   .navtoggle:checked ~ .nav{ transform:translateY(0); opacity:1; visibility:visible; }
 }
+
+/* ==========================================================================
+   Mobile tap targets
+   The brief asks that buttons and links be easy to tap on a phone. Measured at
+   390px, the utility-bar contact links and the footer rows were 18-25px tall.
+   Buttons were already comfortable (48px+); these are the inline ones.
+   ========================================================================== */
+@media (max-width:760px){
+  .topbar a, .hero__talk a{ display:inline-flex; align-items:center; min-height:42px; }
+  .site-foot__col a{ display:inline-flex; align-items:center; min-height:34px; }
+}
