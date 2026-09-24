@@ -19,6 +19,12 @@
 </head>
 <body>
 
+<!-- icon sprite — the real WhatsApp brand glyph + a phone handset, defined once per page -->
+<svg class="svg-sprite" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <symbol id="ico-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+  <symbol id="ico-phone" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></symbol>
+</svg>
+
 <a class="skip" href="#main">Skip to content</a>
 <div class="scroll-progress" aria-hidden="true"><span></span></div>
 <div class="page-grain" aria-hidden="true"></div>
@@ -29,7 +35,8 @@
       <span class="live-dot" aria-hidden="true"></span>
       Software · IT services · digital marketing — since February 2017    </span>
     <span class="topbar__right">
-      <a href="tel:9325695631">📞 +91 93256 95631</a>
+      <a href="tel:+919325695631" class="topbar__wa"><svg class="ico" aria-hidden="true"><use href="#ico-phone"/></svg> +91 93256 95631</a>
+      <a href="https://wa.me/919325695631?text=Hi%20Zodiac%20Tech%20Soft%20%E2%80%94%20I%20would%20like%20a%20quote.%20My%20requirement%3A%20" target="_blank" rel="noopener" class="topbar__wa"><svg class="ico ico--wa" aria-hidden="true"><use href="#ico-wa"/></svg> WhatsApp</a>
       <a href="mailto:sam.andnkar1990@gmail.com">✉ sam.andnkar1990@gmail.com</a>
     </span>
   </div>
@@ -167,253 +174,24 @@
   </div>
 </section>
 
-<!-- ============================ client roster ============================ -->
+<!-- ============================ client roster — animated logo slider ============================ -->
 <section class="sec" id="clients">
   <div class="wrap">
-    <div class="sec__head reveal">
+    <div class="sec__head sec__head--center reveal">
       <p class="kicker">THE ROSTER</p>
-      <h2>Who we've built for</h2>
-      <p>24+ government institutions and private-sector organisations — Zilla Parishad and municipal corporations, forest departments, Chandrapur Police, Gondwana University and Tadoba-Andhari Tiger Reserve, alongside L&amp;T, DSK Group, ISBM Pune and ANS The Solution. 172+ projects delivered in total, a large share of them white-label for other agencies.</p>
+      <h2>Every client we have delivered for</h2>
+      <p>24+ government institutions and private-sector organisations. Hover to pause and read a name.</p>
     </div>
-    <div class="clientgrid">
-              <div class="client reveal" data-d="0">
-                      <span class="client__logo">
-              <img src="assets/img/clients/atal-bihari-vajpayee-botanical-garden.png" alt="Atal Bihari Vajpayee Botanical Garden logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Atal Bihari Vajpayee Botanical Garden</span>
-            <div class="client__city">Chandrapur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="1">
-                      <span class="client__logo">
-              <img src="assets/img/clients/chandrapur-forest-department.png" alt="Chandrapur Forest Department logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Chandrapur Forest Department</span>
-            <div class="client__city">Chandrapur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="2">
-                      <span class="client__logo">
-              <img src="assets/img/clients/tadoba-andhari-tiger-reserve.png" alt="Tadoba-Andhari Tiger Reserve logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Tadoba-Andhari Tiger Reserve</span>
-            <div class="client__city">Chandrapur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="3">
-                      <span class="client__logo">
-              <img src="assets/img/clients/dr-ambedkar-college.png" alt="Dr. Ambedkar College of Arts, Commerce &amp; Science logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Dr. Ambedkar College of Arts, Commerce &amp; Science</span>
-            <div class="client__city">Chandrapur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="0">
-                      <span class="client__logo">
-              <img src="assets/img/clients/mahagenco.png" alt="Maharashtra State Power Generation Co. Ltd. logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Maharashtra State Power Generation Co. Ltd.</span>
-            <div class="client__city">Chandrapur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="1">
-                      <span class="client__logo">
-              <img src="assets/img/clients/chandrapur-police.png" alt="Chandrapur Police logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Chandrapur Police</span>
-            <div class="client__city">Chandrapur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="2">
-                      <span class="client__logo">
-              <img src="assets/img/clients/nagar-parishad-ballarpur.png" alt="Nagar Parishad Ballarpur logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Nagar Parishad Ballarpur</span>
-            <div class="client__city">Ballarpur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="3">
-                      <span class="client__logo">
-              <img src="assets/img/clients/nagar-parishad-warora.png" alt="Nagar Parishad Warora logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Nagar Parishad Warora</span>
-            <div class="client__city">Warora</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="0">
-                      <span class="client__logo">
-              <img src="assets/img/clients/nagar-parishad-rajura.png" alt="Nagar Parishad Rajura logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Nagar Parishad Rajura</span>
-            <div class="client__city">Rajura</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="1">
-                      <span class="client__logo">
-              <img src="assets/img/clients/nagpur-city-g20.png" alt="Nagpur City G20 logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Nagpur City G20</span>
-            <div class="client__city">Nagpur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="2">
-                      <span class="client__logo">
-              <img src="assets/img/clients/gondwana-university.png" alt="Gondwana University logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Gondwana University</span>
-            <div class="client__city">Gadchiroli</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="3">
-                      <span class="client__logo">
-              <img src="assets/img/clients/isbm-pune.png" alt="ISBM Pune logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">ISBM Pune</span>
-            <div class="client__city">Pune</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="0">
-                      <span class="client__logo">
-              <img src="assets/img/clients/lnt.png" alt="L&amp;T (Larsen &amp; Toubro) logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">L&amp;T (Larsen &amp; Toubro)</span>
-            <div class="client__city">India</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="1">
-                      <span class="client__logo">
-              <img src="assets/img/clients/jharkhand-forest-department.png" alt="Jharkhand Forest Department logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Jharkhand Forest Department</span>
-            <div class="client__city">Jharkhand</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="2">
-                      <span class="client__logo">
-              <img src="assets/img/clients/zilla-parishad-chandrapur.png" alt="Zilla Parishad Chandrapur logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Zilla Parishad Chandrapur</span>
-            <div class="client__city">Chandrapur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="3">
-                      <span class="client__logo">
-              <img src="assets/img/clients/chandrapur-municipal-corporation.png" alt="Chandrapur Municipal Corporation logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Chandrapur Municipal Corporation</span>
-            <div class="client__city">Chandrapur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="0">
-                      <span class="client__logo">
-              <img src="assets/img/clients/district-information-office.png" alt="District Information Office logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">District Information Office</span>
-            <div class="client__city">Chandrapur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="1">
-                      <span class="client__logo client__logo--photo">
-              <img src="assets/img/clients/photo-aditya-infraventures.jpg" alt="Aditya Infraventures logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Aditya Infraventures</span>
-            <div class="client__city">India</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="2">
-                      <span class="client__logo">
-              <img src="assets/img/clients/dsk-group.png" alt="DSK Group logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">DSK Group</span>
-            <div class="client__city">India</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="3">
-                      <span class="client__logo">
-              <img src="assets/img/clients/ans-the-solution.png" alt="ANS The Solution logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">ANS The Solution</span>
-            <div class="client__city">Chandrapur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="0">
-                      <span class="client__logo">
-              <img src="assets/img/clients/chandrapur-district-bar-association.png" alt="Chandrapur District Bar Association logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Chandrapur District Bar Association</span>
-            <div class="client__city">Chandrapur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="1">
-                      <span class="client__logo">
-              <img src="assets/img/clients/bjp-chandrapur.png" alt="BJP Chandrapur logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">BJP Chandrapur</span>
-            <div class="client__city">Chandrapur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="2">
-                      <span class="client__logo client__logo--photo">
-              <img src="assets/img/clients/photo-erai-dam-project.jpg" alt="Erai Dam Project logo"
-                   loading="lazy" decoding="async" width="96" height="96">
-            </span>
-                    <span>
-            <span class="client__name">Erai Dam Project</span>
-            <div class="client__city">Chandrapur</div>
-          </span>
-        </div>
-              <div class="client reveal" data-d="3">
-                      <span class="client__mono" aria-hidden="true">PZ</span>
-                    <span>
-            <span class="client__name">PWD Department</span>
-            <div class="client__city">Chandrapur</div>
-          </span>
-        </div>
-          </div>
+  </div>
+
+  <div class="logowall logowall--cards" role="group" aria-label="Clients and institutions we have delivered for"><div class="logowall__row"><div class="logowall__track logowall__track--a"><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/atal-bihari-vajpayee-botanical-garden.png" alt="Atal Bihari Vajpayee Botanical Garden — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Atal Bihari Vajpayee Botanical Garden</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/chandrapur-forest-department.png" alt="Chandrapur Forest Department — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Chandrapur Forest Department</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/tadoba-andhari-tiger-reserve.png" alt="Tadoba-Andhari Tiger Reserve — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Tadoba-Andhari Tiger Reserve</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/dr-ambedkar-college.png" alt="Dr. Ambedkar College of Arts, Commerce &amp; Science — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Dr. Ambedkar College of Arts, Commerce &amp; Science</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/mahagenco.png" alt="Maharashtra State Power Generation Co. Ltd. — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Maharashtra State Power Generation Co. Ltd.</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/chandrapur-police.png" alt="Chandrapur Police — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Chandrapur Police</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/nagar-parishad-ballarpur.png" alt="Nagar Parishad Ballarpur — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Nagar Parishad Ballarpur</span><span class="clientcard__city">Ballarpur</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/nagar-parishad-warora.png" alt="Nagar Parishad Warora — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Nagar Parishad Warora</span><span class="clientcard__city">Warora</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/atal-bihari-vajpayee-botanical-garden.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Atal Bihari Vajpayee Botanical Garden</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/chandrapur-forest-department.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Chandrapur Forest Department</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/tadoba-andhari-tiger-reserve.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Tadoba-Andhari Tiger Reserve</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/dr-ambedkar-college.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Dr. Ambedkar College of Arts, Commerce &amp; Science</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/mahagenco.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Maharashtra State Power Generation Co. Ltd.</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/chandrapur-police.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Chandrapur Police</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/nagar-parishad-ballarpur.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Nagar Parishad Ballarpur</span><span class="clientcard__city">Ballarpur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/nagar-parishad-warora.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Nagar Parishad Warora</span><span class="clientcard__city">Warora</span></span></div></div></div><div class="logowall__row"><div class="logowall__track logowall__track--b"><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/nagar-parishad-rajura.png" alt="Nagar Parishad Rajura — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Nagar Parishad Rajura</span><span class="clientcard__city">Rajura</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/nagpur-city-g20.png" alt="Nagpur City G20 — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Nagpur City G20</span><span class="clientcard__city">Nagpur</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/gondwana-university.png" alt="Gondwana University — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Gondwana University</span><span class="clientcard__city">Gadchiroli</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/isbm-pune.png" alt="ISBM Pune — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">ISBM Pune</span><span class="clientcard__city">Pune</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/lnt.png" alt="L&amp;T (Larsen &amp; Toubro) — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">L&amp;T (Larsen &amp; Toubro)</span><span class="clientcard__city">India</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/jharkhand-forest-department.png" alt="Jharkhand Forest Department — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Jharkhand Forest Department</span><span class="clientcard__city">Jharkhand</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/zilla-parishad-chandrapur.png" alt="Zilla Parishad Chandrapur — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Zilla Parishad Chandrapur</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/chandrapur-municipal-corporation.png" alt="Chandrapur Municipal Corporation — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Chandrapur Municipal Corporation</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/nagar-parishad-rajura.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Nagar Parishad Rajura</span><span class="clientcard__city">Rajura</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/nagpur-city-g20.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Nagpur City G20</span><span class="clientcard__city">Nagpur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/gondwana-university.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Gondwana University</span><span class="clientcard__city">Gadchiroli</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/isbm-pune.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">ISBM Pune</span><span class="clientcard__city">Pune</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/lnt.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">L&amp;T (Larsen &amp; Toubro)</span><span class="clientcard__city">India</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/jharkhand-forest-department.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Jharkhand Forest Department</span><span class="clientcard__city">Jharkhand</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/zilla-parishad-chandrapur.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Zilla Parishad Chandrapur</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/chandrapur-municipal-corporation.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Chandrapur Municipal Corporation</span><span class="clientcard__city">Chandrapur</span></span></div></div></div><div class="logowall__row"><div class="logowall__track logowall__track--a"><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/district-information-office.png" alt="District Information Office — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">District Information Office</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard"><span class="clientcard__logo clientcard__logo--photo"><img src="assets/img/clients/photo-aditya-infraventures.jpg" alt="Aditya Infraventures — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Aditya Infraventures</span><span class="clientcard__city">India</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/dsk-group.png" alt="DSK Group — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">DSK Group</span><span class="clientcard__city">India</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/ans-the-solution.png" alt="ANS The Solution — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">ANS The Solution</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/chandrapur-district-bar-association.png" alt="Chandrapur District Bar Association — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Chandrapur District Bar Association</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard"><span class="clientcard__logo"><img src="assets/img/clients/bjp-chandrapur.png" alt="BJP Chandrapur — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">BJP Chandrapur</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard"><span class="clientcard__logo clientcard__logo--photo"><img src="assets/img/clients/photo-erai-dam-project.jpg" alt="Erai Dam Project — client logo" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Erai Dam Project</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard"><span class="clientcard__logo clientcard__logo--mono"><span class="clientcard__mono" aria-hidden="true">PZ</span></span><span class="clientcard__meta"><span class="clientcard__name">PWD Department</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/district-information-office.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">District Information Office</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo clientcard__logo--photo"><img src="assets/img/clients/photo-aditya-infraventures.jpg" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Aditya Infraventures</span><span class="clientcard__city">India</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/dsk-group.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">DSK Group</span><span class="clientcard__city">India</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/ans-the-solution.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">ANS The Solution</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/chandrapur-district-bar-association.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Chandrapur District Bar Association</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo"><img src="assets/img/clients/bjp-chandrapur.png" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">BJP Chandrapur</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo clientcard__logo--photo"><img src="assets/img/clients/photo-erai-dam-project.jpg" alt="" loading="lazy" decoding="async" width="96" height="96"></span><span class="clientcard__meta"><span class="clientcard__name">Erai Dam Project</span><span class="clientcard__city">Chandrapur</span></span></div><div class="clientcard" aria-hidden="true"><span class="clientcard__logo clientcard__logo--mono"><span class="clientcard__mono" aria-hidden="true">PZ</span></span><span class="clientcard__meta"><span class="clientcard__name">PWD Department</span><span class="clientcard__city">Chandrapur</span></span></div></div></div></div>
+  <div class="wrap">
+    <p class="note reveal" style="margin-top:2.2rem">
+      <strong>All 24, not a highlight reel:</strong> Zilla Parishad and municipal corporations, forest departments,
+      Chandrapur Police, MAHAGENCO, Gondwana University and the Tadoba-Andhari Tiger Reserve, alongside L&amp;T, DSK Group,
+      ISBM Pune and ANS The Solution — plus 172+ completed projects, a large share delivered white-label for other agencies.
+      <a href="contact.html" style="color:var(--gold-light)">Ask us for the relevant references.</a>
+    </p>
   </div>
 </section>
 
@@ -542,11 +320,12 @@
   <div class="finalcta__glow" aria-hidden="true"></div>
   <div class="wrap finalcta__in reveal">
     <p class="kicker">YOUR NEXT PROJECT STARTS HERE</p>
-    <h2 class="finalcta__h">Software, infrastructure and growth —<br><span class="gold-text">run by one team.</span></h2>
-    <p class="lede finalcta__lede">Book a free 30-minute call. Bring the requirement, the system that is slowing you down, or the numbers that are not moving — we will tell you honestly what we would fix first. No hard pitch, no obligation.</p>
+    <h2 class="finalcta__h">Stop managing four vendors.<br><span class="gold-text">Start with one team.</span></h2>
+    <p class="lede finalcta__lede">Book a free 30-minute call or send the requirement on WhatsApp. Bring the system that is slowing you down, the site that is not converting, or the numbers that never moved — you get an honest read on what to fix first, then a written scope and a fixed price within 24 hours.</p>
     <div class="finalcta__btns">
       <a class="btn btn--gold btn--lg" href="contact.html" data-cta="final">Start a Project <span aria-hidden="true">→</span></a>
-      <a class="btn btn--ghost btn--lg" href="tel:9325695631">Call 9325695631</a>
+      <a class="btn btn--wa btn--lg" href="https://wa.me/919325695631?text=Hi%20Zodiac%20Tech%20Soft%20%E2%80%94%20I%20would%20like%20a%20quote.%20My%20requirement%3A%20" target="_blank" rel="noopener" data-cta="final-whatsapp"><svg class="ico ico--wa" aria-hidden="true"><use href="#ico-wa"/></svg> Chat on WhatsApp</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+919325695631" data-cta="final-call"><svg class="ico" aria-hidden="true"><use href="#ico-phone"/></svg> Call +91 93256 95631</a>
     </div>
     <p class="finalcta__micro">
       <span>Reply within 24 hours</span>
@@ -629,6 +408,20 @@
     </p>
   </div>
 </footer>
+
+<!-- ============================ always-reachable contact buttons ============================ -->
+<div class="fabbar" role="complementary" aria-label="Contact Zodiac Tech Soft">
+  <a class="fab fab--wa" href="https://wa.me/919325695631?text=Hi%20Zodiac%20Tech%20Soft%20%E2%80%94%20I%20would%20like%20a%20quote.%20My%20requirement%3A%20"
+     target="_blank" rel="noopener" data-cta="fab-whatsapp" aria-label="Chat with us on WhatsApp — +91 93256 95631">
+    <span class="fab__ico" aria-hidden="true"><svg><use href="#ico-wa"/></svg></span>
+    <span class="fab__label">WhatsApp us</span>
+  </a>
+  <a class="fab fab--call" href="tel:+919325695631" data-cta="fab-call"
+     aria-label="Call Zodiac Tech Soft on +91 93256 95631">
+    <span class="fab__ico" aria-hidden="true"><svg><use href="#ico-phone"/></svg></span>
+    <span class="fab__label">Call +91 93256 95631</span>
+  </a>
+</div>
 
 <a class="mobile-cta" href="contact.html" data-cta="sticky">Start a Project <span aria-hidden="true">→</span></a>
 

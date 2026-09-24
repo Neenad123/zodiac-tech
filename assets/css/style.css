@@ -890,3 +890,112 @@ input, select, textarea{ max-width:100%; min-width:0; }
   .logowall__row{ overflow-x:auto; }
   .logotile:hover, .client:hover .client__logo{ transform:none; }
 }
+
+
+/* ==========================================================================
+   WhatsApp + Call — always-reachable contact buttons
+   ========================================================================== */
+.svg-sprite{ position:absolute; width:0; height:0; overflow:hidden; }
+.ico{ width:1.05em; height:1.05em; fill:currentColor; vertical-align:-.15em; flex:0 0 auto; }
+.ico--wa{ fill:#25d366; }
+.topbar__wa{ display:inline-flex; align-items:center; gap:.4rem; }
+.topbar__wa .ico{ width:14px; height:14px; }
+
+.btn--wa{ background:#25d366; color:#03230f; border:1px solid rgba(37,211,102,.55); }
+.btn--wa:hover{ background:#1fbe5b; transform:translateY(-2px); }
+
+.fabbar{
+  position:fixed; right:1.05rem; bottom:1.05rem; z-index:130;
+  display:flex; flex-direction:column; align-items:flex-end; gap:.6rem;
+}
+.fab{
+  position:relative; display:inline-flex; align-items:center;
+  padding:.62rem; border-radius:999px; text-decoration:none;
+  font-family:var(--display); font-weight:700; font-size:.8rem; letter-spacing:.03em;
+  box-shadow:0 14px 32px -12px rgba(0,0,0,.8), 0 0 0 1px rgba(255,255,255,.09);
+  transition:transform .3s var(--ease), box-shadow .3s var(--ease), padding .3s var(--ease);
+}
+.fab__ico{ width:32px; height:32px; display:grid; place-items:center; flex:0 0 32px; }
+.fab__ico svg{ width:26px; height:26px; fill:currentColor; display:block; }
+.fab__label{
+  max-width:0; opacity:0; overflow:hidden; white-space:nowrap;
+  transition:max-width .34s var(--ease), opacity .26s var(--ease), margin-right .34s var(--ease);
+}
+.fab:hover .fab__label, .fab:focus-visible .fab__label{ max-width:12rem; opacity:1; margin-right:.55rem; }
+.fab--wa{ background:#25d366; color:#04240f; }
+.fab--wa:hover{ transform:translateY(-3px); box-shadow:0 20px 38px -12px rgba(37,211,102,.75); }
+.fab--call{ background-image:var(--grad-gold); color:#12100a; }
+.fab--call:hover{ transform:translateY(-3px); box-shadow:0 20px 38px -12px rgba(242,183,1,.8); }
+/* one slow ring on WhatsApp — attention, not flashing */
+.fab--wa::after{
+  content:''; position:absolute; inset:0; border-radius:999px; pointer-events:none;
+  animation:fabring 3.6s ease-out infinite;
+}
+@keyframes fabring{
+  0%   { box-shadow:0 0 0 0 rgba(37,211,102,.55) }
+  65%  { box-shadow:0 0 0 16px rgba(37,211,102,0) }
+  100% { box-shadow:0 0 0 0 rgba(37,211,102,0) }
+}
+
+@media (max-width:720px){
+  /* sit clear of the sticky "Start a Project" bar */
+  .fabbar{ right:.8rem; bottom:5.35rem; gap:.55rem; }
+  .fab{ padding:.55rem; }
+  .fab__ico{ width:28px; height:28px; flex-basis:28px; }
+  .fab__ico svg{ width:23px; height:23px; }
+  .fab__label{ display:none; }
+}
+@media (prefers-reduced-motion: reduce){
+  .fab--wa::after{ animation:none; }
+  .fab:hover, .fab--call:hover, .btn--wa:hover{ transform:none; }
+}
+
+
+/* -------- work-page roster cards, inside the same animated slider -------- */
+.logowall--cards{ padding:1.1rem 0 .5rem; }
+.clientcard{
+  flex:0 0 auto; width:290px; margin-right:1rem;
+  display:flex; align-items:center; gap:.9rem;
+  padding:.8rem 1rem; border-radius:var(--r);
+  border:1px solid var(--line-soft); background:rgba(255,255,255,.014);
+  transition:border-color .3s var(--ease), background .3s var(--ease), transform .3s var(--ease);
+}
+.clientcard:hover{ border-color:var(--gold-line); background:rgba(242,183,1,.045); transform:translateY(-3px); }
+.clientcard__logo{
+  flex:0 0 58px; width:58px; height:58px; border-radius:13px; background:#fff;
+  display:grid; place-items:center; padding:7px;
+  box-shadow:0 5px 16px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.06);
+}
+.clientcard__logo img{ width:100%; height:100%; object-fit:contain; display:block; }
+.clientcard__logo--photo img{ object-fit:cover; border-radius:8px; }
+.clientcard__logo--mono{ background:var(--gold-dim); border:1px solid var(--gold-line); box-shadow:none; }
+.clientcard__mono{ font-family:var(--display); font-weight:800; font-size:.85rem; color:var(--gold); }
+.clientcard__meta{ display:flex; flex-direction:column; gap:.18rem; min-width:0; }
+.clientcard__name{ font-family:var(--display); font-size:.85rem; font-weight:600; line-height:1.28; }
+.clientcard__city{ font-size:.68rem; letter-spacing:.09em; text-transform:uppercase; color:var(--muted-2); }
+
+@media (max-width:720px){
+  .clientcard{ width:236px; padding:.7rem .85rem; gap:.7rem; }
+  .clientcard__logo{ flex-basis:48px; width:48px; height:48px; border-radius:11px; }
+  .clientcard__name{ font-size:.8rem; }
+}
+
+
+/* -------- hero: a human path next to the form path -------- */
+.hero__talk{
+  display:flex; flex-wrap:wrap; align-items:center; gap:.6rem 1.3rem;
+  margin-top:1.4rem; font-size:.88rem;
+}
+.hero__talk-l{ color:var(--muted-2); }
+.hero__talk a{
+  display:inline-flex; align-items:center; gap:.45rem; color:var(--text);
+  font-family:var(--display); font-weight:600; font-size:.86rem;
+  border-bottom:1px solid transparent; padding-bottom:1px;
+  transition:color .25s var(--ease), border-color .25s var(--ease);
+}
+.hero__talk a:hover{ color:var(--gold); border-color:var(--gold-line); }
+.hero__talk .ico{ width:15px; height:15px; }
+
+/* -------- sidebar contact button pair -------- */
+.talkbtns{ display:flex; flex-wrap:wrap; gap:.6rem; }
+.talkbtns .btn{ flex:1 1 auto; justify-content:center; }

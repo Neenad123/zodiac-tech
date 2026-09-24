@@ -19,6 +19,12 @@
 </head>
 <body>
 
+<!-- icon sprite — the real WhatsApp brand glyph + a phone handset, defined once per page -->
+<svg class="svg-sprite" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <symbol id="ico-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+  <symbol id="ico-phone" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></symbol>
+</svg>
+
 <a class="skip" href="#main">Skip to content</a>
 <div class="scroll-progress" aria-hidden="true"><span></span></div>
 <div class="page-grain" aria-hidden="true"></div>
@@ -29,7 +35,8 @@
       <span class="live-dot" aria-hidden="true"></span>
       Software · IT services · digital marketing — since February 2017    </span>
     <span class="topbar__right">
-      <a href="tel:9325695631">📞 +91 93256 95631</a>
+      <a href="tel:+919325695631" class="topbar__wa"><svg class="ico" aria-hidden="true"><use href="#ico-phone"/></svg> +91 93256 95631</a>
+      <a href="https://wa.me/919325695631?text=Hi%20Zodiac%20Tech%20Soft%20%E2%80%94%20I%20would%20like%20a%20quote.%20My%20requirement%3A%20" target="_blank" rel="noopener" class="topbar__wa"><svg class="ico ico--wa" aria-hidden="true"><use href="#ico-wa"/></svg> WhatsApp</a>
       <a href="mailto:sam.andnkar1990@gmail.com">✉ sam.andnkar1990@gmail.com</a>
     </span>
   </div>
@@ -88,15 +95,20 @@
     <div class="reveal">
       <span class="hero__eyebrow">SOFTWARE · IT SERVICES · DIGITAL MARKETING · IMMERSIVE TECH</span>
       <h1>
-        <span>Software, IT &amp;</span>
-        <span class="gold-text">Digital Growth</span>
-        <span>Under One Roof.</span>
+        <span>Build the system.</span>
+        <span class="gold-text">Grow the business.</span>
+        <span>One team for both.</span>
       </h1>
-      <p class="hero__sub">Zodiac Tech Soft is a software and IT services company. We build the systems, run the infrastructure behind them, and grow them with digital marketing — 172+ projects delivered since 2017 for government institutions and private-sector brands, including white-label work for agencies.</p>
+      <p class="hero__sub">A software and IT services company in Chandrapur, Nagpur, Pune and Rajkot. 8+ years, 24+ government and private-sector clients, 172+ projects delivered — software, IT infrastructure and the digital marketing that brings in enquiries. Send your requirement: you get a written scope, timeline and fixed price within 24 hours.</p>
       <div class="hero__btns">
-        <a class="btn btn--gold btn--lg" href="contact.html" data-cta="hero">Start a Project <span aria-hidden="true">→</span></a>
-        <a class="btn btn--ghost btn--lg" href="work.html">See Our Work</a>
+        <a class="btn btn--gold btn--lg" href="contact.html" data-cta="hero">Get a Fixed Quote in 24 Hours <span aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost btn--lg" href="work.html">See 172+ Projects</a>
       </div>
+      <p class="hero__talk">
+        <span class="hero__talk-l">Prefer to talk?</span>
+        <a href="https://wa.me/919325695631?text=Hi%20Zodiac%20Tech%20Soft%20%E2%80%94%20I%20would%20like%20a%20quote.%20My%20requirement%3A%20" target="_blank" rel="noopener" data-cta="hero-whatsapp"><svg class="ico ico--wa" aria-hidden="true"><use href="#ico-wa"/></svg> WhatsApp +91 93256 95631</a>
+        <a href="tel:+919325695631" data-cta="hero-call"><svg class="ico" aria-hidden="true"><use href="#ico-phone"/></svg> Call now</a>
+      </p>
       <div class="hero__proof">
                   <div>
             <strong>8+</strong>
@@ -114,18 +126,18 @@
     </div>
 
     <aside class="auditcard reveal" data-d="1">
-      <p class="auditcard__label">Free · No obligation</p>
-      <h3>Get a Free IT &amp; Digital Audit</h3>
-      <p>We review what you already run — website, software, infrastructure, marketing — and send back the five things we would fix first.</p>
+      <p class="auditcard__label">Free · No obligation · Reply in 24 hours</p>
+      <h3>Free audit: the five things we would fix first</h3>
+      <p>A 30-minute review of what you already run — website, software, infrastructure and marketing — and a written list of the fixes with the highest return. No sales deck, no obligation.</p>
       <ul class="auditcard__list">
-        <li>Website speed &amp; search visibility</li>
-        <li>Software &amp; workflow gaps</li>
-        <li>IT infrastructure &amp; security</li>
-        <li>Marketing &amp; tracking review</li>
-        <li>A prioritised fix list, in writing</li>
+        <li>Where your enquiries are leaking</li>
+        <li>Software &amp; manual-work gaps</li>
+        <li>Website speed, SEO &amp; tracking</li>
+        <li>Infrastructure &amp; security risks</li>
+        <li>The five fixes, in writing</li>
       </ul>
-      <a class="btn btn--gold btn--block" href="insights.html" data-cta="hero-audit">Request the Audit <span aria-hidden="true">→</span></a>
-      <p class="auditcard__micro">Mon–Sat · 9 AM – 6:30 PM IST · Reply within 24 hours</p>
+      <a class="btn btn--gold btn--block" href="insights.html" data-cta="hero-audit">Request My Free Audit <span aria-hidden="true">→</span></a>
+      <p class="auditcard__micro">Mon–Sat · 9 AM – 6:30 PM IST · No obligation</p>
     </aside>
   </div>
 </section>
@@ -136,205 +148,11 @@
     <span>8+ Years in Market</span><span>24+ Government &amp; Private Clients</span><span>172+ Projects Delivered</span><span>4 City Offices</span>  </div>
 </div>
 
-<!-- ============================ client logo wall (animated) ============================ -->
-<div class="logowall" aria-label="Clients and institutions we have delivered for">
-      <div class="logowall__row">
-      <div class="logowall__track logowall__track--a">
-                              <span class="logotile" title="Atal Bihari Vajpayee Botanical Garden">
-              <img src="assets/img/clients/atal-bihari-vajpayee-botanical-garden.png" alt="Atal Bihari Vajpayee Botanical Garden — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Chandrapur Forest Department">
-              <img src="assets/img/clients/chandrapur-forest-department.png" alt="Chandrapur Forest Department — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Tadoba-Andhari Tiger Reserve">
-              <img src="assets/img/clients/tadoba-andhari-tiger-reserve.png" alt="Tadoba-Andhari Tiger Reserve — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Dr. Ambedkar College of Arts, Commerce &amp; Science">
-              <img src="assets/img/clients/dr-ambedkar-college.png" alt="Dr. Ambedkar College of Arts, Commerce &amp; Science — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Maharashtra State Power Generation Co. Ltd.">
-              <img src="assets/img/clients/mahagenco.png" alt="Maharashtra State Power Generation Co. Ltd. — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Chandrapur Police">
-              <img src="assets/img/clients/chandrapur-police.png" alt="Chandrapur Police — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Nagar Parishad Ballarpur">
-              <img src="assets/img/clients/nagar-parishad-ballarpur.png" alt="Nagar Parishad Ballarpur — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Nagar Parishad Warora">
-              <img src="assets/img/clients/nagar-parishad-warora.png" alt="Nagar Parishad Warora — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Nagar Parishad Rajura">
-              <img src="assets/img/clients/nagar-parishad-rajura.png" alt="Nagar Parishad Rajura — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Nagpur City G20">
-              <img src="assets/img/clients/nagpur-city-g20.png" alt="Nagpur City G20 — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Gondwana University">
-              <img src="assets/img/clients/gondwana-university.png" alt="Gondwana University — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="ISBM Pune">
-              <img src="assets/img/clients/isbm-pune.png" alt="ISBM Pune — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                                        <span class="logotile" aria-hidden="true" title="Atal Bihari Vajpayee Botanical Garden">
-              <img src="assets/img/clients/atal-bihari-vajpayee-botanical-garden.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Chandrapur Forest Department">
-              <img src="assets/img/clients/chandrapur-forest-department.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Tadoba-Andhari Tiger Reserve">
-              <img src="assets/img/clients/tadoba-andhari-tiger-reserve.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Dr. Ambedkar College of Arts, Commerce &amp; Science">
-              <img src="assets/img/clients/dr-ambedkar-college.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Maharashtra State Power Generation Co. Ltd.">
-              <img src="assets/img/clients/mahagenco.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Chandrapur Police">
-              <img src="assets/img/clients/chandrapur-police.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Nagar Parishad Ballarpur">
-              <img src="assets/img/clients/nagar-parishad-ballarpur.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Nagar Parishad Warora">
-              <img src="assets/img/clients/nagar-parishad-warora.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Nagar Parishad Rajura">
-              <img src="assets/img/clients/nagar-parishad-rajura.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Nagpur City G20">
-              <img src="assets/img/clients/nagpur-city-g20.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Gondwana University">
-              <img src="assets/img/clients/gondwana-university.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="ISBM Pune">
-              <img src="assets/img/clients/isbm-pune.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                        </div>
-    </div>
-      <div class="logowall__row">
-      <div class="logowall__track logowall__track--b">
-                              <span class="logotile" title="L&amp;T (Larsen &amp; Toubro)">
-              <img src="assets/img/clients/lnt.png" alt="L&amp;T (Larsen &amp; Toubro) — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Jharkhand Forest Department">
-              <img src="assets/img/clients/jharkhand-forest-department.png" alt="Jharkhand Forest Department — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Zilla Parishad Chandrapur">
-              <img src="assets/img/clients/zilla-parishad-chandrapur.png" alt="Zilla Parishad Chandrapur — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Chandrapur Municipal Corporation">
-              <img src="assets/img/clients/chandrapur-municipal-corporation.png" alt="Chandrapur Municipal Corporation — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="District Information Office">
-              <img src="assets/img/clients/district-information-office.png" alt="District Information Office — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Aditya Infraventures">
-              <img src="assets/img/clients/photo-aditya-infraventures.jpg" alt="Aditya Infraventures — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="DSK Group">
-              <img src="assets/img/clients/dsk-group.png" alt="DSK Group — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="ANS The Solution">
-              <img src="assets/img/clients/ans-the-solution.png" alt="ANS The Solution — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Chandrapur District Bar Association">
-              <img src="assets/img/clients/chandrapur-district-bar-association.png" alt="Chandrapur District Bar Association — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="BJP Chandrapur">
-              <img src="assets/img/clients/bjp-chandrapur.png" alt="BJP Chandrapur — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" title="Erai Dam Project">
-              <img src="assets/img/clients/photo-erai-dam-project.jpg" alt="Erai Dam Project — client logo"
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                                        <span class="logotile" aria-hidden="true" title="L&amp;T (Larsen &amp; Toubro)">
-              <img src="assets/img/clients/lnt.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Jharkhand Forest Department">
-              <img src="assets/img/clients/jharkhand-forest-department.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Zilla Parishad Chandrapur">
-              <img src="assets/img/clients/zilla-parishad-chandrapur.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Chandrapur Municipal Corporation">
-              <img src="assets/img/clients/chandrapur-municipal-corporation.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="District Information Office">
-              <img src="assets/img/clients/district-information-office.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Aditya Infraventures">
-              <img src="assets/img/clients/photo-aditya-infraventures.jpg" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="DSK Group">
-              <img src="assets/img/clients/dsk-group.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="ANS The Solution">
-              <img src="assets/img/clients/ans-the-solution.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Chandrapur District Bar Association">
-              <img src="assets/img/clients/chandrapur-district-bar-association.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="BJP Chandrapur">
-              <img src="assets/img/clients/bjp-chandrapur.png" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                      <span class="logotile" aria-hidden="true" title="Erai Dam Project">
-              <img src="assets/img/clients/photo-erai-dam-project.jpg" alt=""
-                   loading="lazy" decoding="async" width="120" height="120">
-            </span>
-                        </div>
-    </div>
-    <p class="logowall__note">
-    <strong>24+</strong> government institutions and private-sector clients ·
-    <strong>172+</strong> projects delivered, including white-label work
-  </p>
-</div>
+<!-- ============================ client logo wall (animated slider) ============================ -->
+<div class="logowall" role="group" aria-label="Clients and institutions we have delivered for"><div class="logowall__row"><div class="logowall__track logowall__track--a"><span class="logotile" title="Atal Bihari Vajpayee Botanical Garden"><img src="assets/img/clients/atal-bihari-vajpayee-botanical-garden.png" alt="Atal Bihari Vajpayee Botanical Garden — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Chandrapur Forest Department"><img src="assets/img/clients/chandrapur-forest-department.png" alt="Chandrapur Forest Department — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Tadoba-Andhari Tiger Reserve"><img src="assets/img/clients/tadoba-andhari-tiger-reserve.png" alt="Tadoba-Andhari Tiger Reserve — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Dr. Ambedkar College of Arts, Commerce &amp; Science"><img src="assets/img/clients/dr-ambedkar-college.png" alt="Dr. Ambedkar College of Arts, Commerce &amp; Science — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Maharashtra State Power Generation Co. Ltd."><img src="assets/img/clients/mahagenco.png" alt="Maharashtra State Power Generation Co. Ltd. — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Chandrapur Police"><img src="assets/img/clients/chandrapur-police.png" alt="Chandrapur Police — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Nagar Parishad Ballarpur"><img src="assets/img/clients/nagar-parishad-ballarpur.png" alt="Nagar Parishad Ballarpur — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Nagar Parishad Warora"><img src="assets/img/clients/nagar-parishad-warora.png" alt="Nagar Parishad Warora — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Nagar Parishad Rajura"><img src="assets/img/clients/nagar-parishad-rajura.png" alt="Nagar Parishad Rajura — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Nagpur City G20"><img src="assets/img/clients/nagpur-city-g20.png" alt="Nagpur City G20 — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Gondwana University"><img src="assets/img/clients/gondwana-university.png" alt="Gondwana University — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="ISBM Pune"><img src="assets/img/clients/isbm-pune.png" alt="ISBM Pune — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Atal Bihari Vajpayee Botanical Garden"><img src="assets/img/clients/atal-bihari-vajpayee-botanical-garden.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Chandrapur Forest Department"><img src="assets/img/clients/chandrapur-forest-department.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Tadoba-Andhari Tiger Reserve"><img src="assets/img/clients/tadoba-andhari-tiger-reserve.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Dr. Ambedkar College of Arts, Commerce &amp; Science"><img src="assets/img/clients/dr-ambedkar-college.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Maharashtra State Power Generation Co. Ltd."><img src="assets/img/clients/mahagenco.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Chandrapur Police"><img src="assets/img/clients/chandrapur-police.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Nagar Parishad Ballarpur"><img src="assets/img/clients/nagar-parishad-ballarpur.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Nagar Parishad Warora"><img src="assets/img/clients/nagar-parishad-warora.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Nagar Parishad Rajura"><img src="assets/img/clients/nagar-parishad-rajura.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Nagpur City G20"><img src="assets/img/clients/nagpur-city-g20.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Gondwana University"><img src="assets/img/clients/gondwana-university.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="ISBM Pune"><img src="assets/img/clients/isbm-pune.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span></div></div><div class="logowall__row"><div class="logowall__track logowall__track--b"><span class="logotile" title="L&amp;T (Larsen &amp; Toubro)"><img src="assets/img/clients/lnt.png" alt="L&amp;T (Larsen &amp; Toubro) — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Jharkhand Forest Department"><img src="assets/img/clients/jharkhand-forest-department.png" alt="Jharkhand Forest Department — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Zilla Parishad Chandrapur"><img src="assets/img/clients/zilla-parishad-chandrapur.png" alt="Zilla Parishad Chandrapur — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Chandrapur Municipal Corporation"><img src="assets/img/clients/chandrapur-municipal-corporation.png" alt="Chandrapur Municipal Corporation — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="District Information Office"><img src="assets/img/clients/district-information-office.png" alt="District Information Office — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Aditya Infraventures"><img src="assets/img/clients/photo-aditya-infraventures.jpg" alt="Aditya Infraventures — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="DSK Group"><img src="assets/img/clients/dsk-group.png" alt="DSK Group — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="ANS The Solution"><img src="assets/img/clients/ans-the-solution.png" alt="ANS The Solution — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Chandrapur District Bar Association"><img src="assets/img/clients/chandrapur-district-bar-association.png" alt="Chandrapur District Bar Association — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="BJP Chandrapur"><img src="assets/img/clients/bjp-chandrapur.png" alt="BJP Chandrapur — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" title="Erai Dam Project"><img src="assets/img/clients/photo-erai-dam-project.jpg" alt="Erai Dam Project — client logo" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="L&amp;T (Larsen &amp; Toubro)"><img src="assets/img/clients/lnt.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Jharkhand Forest Department"><img src="assets/img/clients/jharkhand-forest-department.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Zilla Parishad Chandrapur"><img src="assets/img/clients/zilla-parishad-chandrapur.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Chandrapur Municipal Corporation"><img src="assets/img/clients/chandrapur-municipal-corporation.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="District Information Office"><img src="assets/img/clients/district-information-office.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Aditya Infraventures"><img src="assets/img/clients/photo-aditya-infraventures.jpg" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="DSK Group"><img src="assets/img/clients/dsk-group.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="ANS The Solution"><img src="assets/img/clients/ans-the-solution.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Chandrapur District Bar Association"><img src="assets/img/clients/chandrapur-district-bar-association.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="BJP Chandrapur"><img src="assets/img/clients/bjp-chandrapur.png" alt="" loading="lazy" decoding="async" width="120" height="120"></span><span class="logotile" aria-hidden="true" title="Erai Dam Project"><img src="assets/img/clients/photo-erai-dam-project.jpg" alt="" loading="lazy" decoding="async" width="120" height="120"></span></div></div></div><p class="logowall__note">
+  <strong>24+</strong> government institutions and private-sector clients ·
+  <strong>172+</strong> projects delivered, including white-label work
+</p>
 
 <!-- ============================ 02 · results bar ============================ -->
 <section class="sec sec--tight">
@@ -376,27 +194,27 @@
     <div class="pain">
               <article class="paincard reveal" data-d="0">
           <span class="paincard__no">01</span>
-          <h3>Systems that stopped fitting the business</h3>
-          <p>The work runs on spreadsheets, WhatsApp groups and software nobody maintains. Every new requirement is a workaround, and nobody can say what the system actually costs to keep alive.</p>
-          <div class="paincard__fix"><span>Custom software, ERP and integrations, built and maintained by us.</span></div>
+          <h3>Your business has outgrown its systems</h3>
+          <p>Orders, files and approvals run through spreadsheets, WhatsApp groups and software nobody has updated since it was installed. Every new requirement becomes a workaround, and nobody can tell you what the current setup costs to keep alive.</p>
+          <div class="paincard__fix"><span>Custom software, ERP and integrations — built, documented and maintained by the same team.</span></div>
         </article>
               <article class="paincard reveal" data-d="1">
           <span class="paincard__no">02</span>
-          <h3>A website that does not do its job</h3>
-          <p>It loads slowly, ranks for nothing, and gives a visitor no clear reason to enquire. Rebuilt once, neglected since — and now every competitor looks more credible online.</p>
-          <div class="paincard__fix"><span>A fast, SEO-clean, conversion-focused website with analytics wired in.</span></div>
+          <h3>Your website is a brochure, not a salesperson</h3>
+          <p>It loads slowly, ranks for nothing you actually sell, and gives a visitor no reason to trust you over the next result on Google. It was built once, neglected since, and every serious competitor now looks more credible online than you do.</p>
+          <div class="paincard__fix"><span>A fast, SEO-clean website built to convert, with analytics wired in from day one.</span></div>
         </article>
               <article class="paincard reveal" data-d="0">
           <span class="paincard__no">03</span>
-          <h3>Marketing spend with no measurement</h3>
-          <p>Posts go out when someone remembers, ads run without proper tracking, and the monthly report shows reach and impressions instead of enquiries and revenue.</p>
-          <div class="paincard__fix"><span>Digital marketing run to a number: SEO, ads, content, tracked end to end.</span></div>
+          <h3>You are paying for reach when you need enquiries</h3>
+          <p>Posts go out when someone remembers, ads run without conversion tracking, and the monthly report talks about reach and impressions — numbers that have never reached your bank account.</p>
+          <div class="paincard__fix"><span>Digital marketing run to a number: SEO, Google and Meta ads, content, tracked end to end.</span></div>
         </article>
               <article class="paincard reveal" data-d="1">
           <span class="paincard__no">04</span>
-          <h3>Four vendors pointing at each other</h3>
-          <p>The developer blames the host, the agency blames the developer, the designer has moved on, and your team is left holding the thread between them.</p>
-          <div class="paincard__fix"><span>Development, infrastructure and marketing under one accountable roof.</span></div>
+          <h3>Four vendors. Zero owners.</h3>
+          <p>The developer blames the host, the agency blames the developer, the designer has moved on, and your team is left holding the thread between them. Work stops while everybody waits for somebody else.</p>
+          <div class="paincard__fix"><span>Software, infrastructure and marketing delivered by one team that answers for the result.</span></div>
         </article>
           </div>
   </div>
@@ -498,7 +316,7 @@
               <article class="pillar reveal" data-d="0">
           <span class="pillar__no">01 · VERTICAL</span>
           <h3>Software Development</h3>
-          <p class="pillar__tag">Systems that run the business</p>
+          <p class="pillar__tag">Software that runs the business</p>
           <p>Custom software, ERP and CRM platforms, portals and integrations — engineered by our own team in React, Next.js, Node, Python, Java and PHP. Delivered on your cloud or ours, with documentation and training.</p>
           <div class="pillar__moves">↳ Manual work turned into systems your team can rely on.</div>
           <a class="pillar__more" href="services.html#software-development">What's included →</a>
@@ -584,8 +402,8 @@
   <div class="wrap">
     <div class="sec__head reveal">
       <p class="kicker">PROOF, NOT PROMISES</p>
-      <h2>Client-stated outcomes</h2>
-      <p>Every result below is what the client said, in their words. We publish only what they have confirmed publicly — detailed case decks are shared on request.</p>
+      <h2>Results our clients put their name to</h2>
+      <p>Every number below is what the client said publicly, in their words. Nothing rounded up, nothing invented — and the accounts behind the rest are available on a call, under NDA.</p>
     </div>
 
     <div class="outcomes">
@@ -694,8 +512,8 @@
   <div class="wrap">
     <div class="sec__head sec__head--center reveal">
       <p class="kicker">WHY ZODIAC TECH</p>
-      <h2>Why brands keep us on the <span class="gold-text">same roof</span></h2>
-      <p>Strategy, creative, media and engineering in one team — that combination is rare, and it is the reason campaigns ship instead of stalling.</p>
+      <h2>Why clients stay after the <span class="gold-text">first project</span></h2>
+      <p>Engineering, production and media in one team — the combination that gets work shipped instead of stalling, and the reason most of our clients are still with us years later.</p>
     </div>
     <div class="why">
               <article class="whycard reveal" data-d="0">
@@ -715,8 +533,8 @@
         </article>
               <article class="whycard reveal" data-d="0">
           <div class="whycard__icon" aria-hidden="true">🏷️</div>
-          <h3>White-label delivery for agencies</h3>
-          <p>A growing share of our 172+ completed projects was delivered as the invisible engineering and production arm behind other agencies and consultancies, under their brand and their NDA.</p>
+          <h3>The delivery arm behind other agencies</h3>
+          <p>A growing share of our 172+ completed projects was delivered as the invisible engineering and production arm behind other agencies and consultancies — under their brand, their client relationship and their NDA.</p>
         </article>
               <article class="whycard reveal" data-d="1">
           <div class="whycard__icon" aria-hidden="true">🏆</div>
@@ -737,8 +555,8 @@
   <div class="wrap">
     <div class="sec__head reveal">
       <p class="kicker">HOW WE WORK</p>
-      <h2>From first call to scale, in six steps</h2>
-      <p>A working rhythm you can plan around — weekly sprints, weekly reviews, monthly reporting.</p>
+      <h2>From first call to live, in six steps</h2>
+      <p>A working rhythm you can plan around — weekly build sprints, a demo every week, monthly reporting on what moved.</p>
     </div>
     <div class="steps">
               <article class="step reveal">
@@ -886,8 +704,8 @@
   <div class="wrap">
     <div class="sec__head reveal">
       <p class="kicker">WORKING TOGETHER</p>
-      <h2>Three ways to start — no lock-in language</h2>
-      <p>Pick the shape that matches your certainty. Every engagement starts with a written scope, timeline and price.</p>
+      <h2>Four ways to work together — pick the one that fits</h2>
+      <p>Fixed price, retainer, time-and-material or white label. Every engagement starts with a written scope, timeline and price — no lock-in language, no surprise invoices.</p>
     </div>
     <div class="eng">
               <article class="engcard reveal" data-d="0">
@@ -932,15 +750,15 @@
         </details>
               <details>
           <summary>What does it cost?</summary>
-          <p class="faq__a">Competitive pricing for the quality delivered. Fixed-price for clear-scoped work; retainer or time-and-material for ongoing engagements. Send us your requirement and you get a transparent quote within 24 hours — no discovery-call gauntlet first.</p>
+          <p class="faq__a">Competitive pricing for the quality delivered, quoted before the work starts. Fixed price for clear-scoped work; retainer or time-and-material when the scope has to move. Send your requirement and you get a transparent, itemised quote within 24 hours — no discovery-call gauntlet first, no obligation.</p>
         </details>
               <details>
           <summary>How long before we see anything?</summary>
-          <p class="faq__a">Timelines the studio already commits to: a logo animation takes 1–2 weeks, a corporate film 3–6 weeks, a full web app or ERP 2–4 months. Every proposal carries a detailed schedule and weekly milestones, and we stick to it.</p>
+          <p class="faq__a">Timelines we already commit to: a logo animation in 1–2 weeks, a corporate film in 3–6 weeks, a website in 3–5 weeks, a full web app or ERP in 2–4 months. Every proposal carries a schedule with weekly milestones, and you see a working demo at the end of each week rather than a status update.</p>
         </details>
               <details>
-          <summary>Can you handle both the software and the marketing?</summary>
-          <p class="faq__a">Yes — that is the point of working with us. Software development, IT infrastructure and production AND digital marketing happen under one roof, so the website, the tracking and the campaigns are built by the same team that has to answer for the numbers.</p>
+          <summary>Who owns what you build for us?</summary>
+          <p class="faq__a">You do. Source code, design files, content, hosting credentials and documentation are handed over when the project ships. Nothing we build is designed to lock you into us — you can run it, extend it, or move it in-house at any point.</p>
         </details>
           </div>
     <p style="margin-top:1.8rem"><a class="btn btn--ghost btn--sm" href="contact.html#faq">All Questions →</a></p>
@@ -953,11 +771,12 @@
   <div class="finalcta__glow" aria-hidden="true"></div>
   <div class="wrap finalcta__in reveal">
     <p class="kicker">YOUR NEXT PROJECT STARTS HERE</p>
-    <h2 class="finalcta__h">Software, infrastructure and growth —<br><span class="gold-text">run by one team.</span></h2>
-    <p class="lede finalcta__lede">Book a free 30-minute call. Bring the requirement, the system that is slowing you down, or the numbers that are not moving — we will tell you honestly what we would fix first. No hard pitch, no obligation.</p>
+    <h2 class="finalcta__h">Stop managing four vendors.<br><span class="gold-text">Start with one team.</span></h2>
+    <p class="lede finalcta__lede">Book a free 30-minute call or send the requirement on WhatsApp. Bring the system that is slowing you down, the site that is not converting, or the numbers that never moved — you get an honest read on what to fix first, then a written scope and a fixed price within 24 hours.</p>
     <div class="finalcta__btns">
       <a class="btn btn--gold btn--lg" href="contact.html" data-cta="final">Start a Project <span aria-hidden="true">→</span></a>
-      <a class="btn btn--ghost btn--lg" href="tel:9325695631">Call 9325695631</a>
+      <a class="btn btn--wa btn--lg" href="https://wa.me/919325695631?text=Hi%20Zodiac%20Tech%20Soft%20%E2%80%94%20I%20would%20like%20a%20quote.%20My%20requirement%3A%20" target="_blank" rel="noopener" data-cta="final-whatsapp"><svg class="ico ico--wa" aria-hidden="true"><use href="#ico-wa"/></svg> Chat on WhatsApp</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+919325695631" data-cta="final-call"><svg class="ico" aria-hidden="true"><use href="#ico-phone"/></svg> Call +91 93256 95631</a>
     </div>
     <p class="finalcta__micro">
       <span>Reply within 24 hours</span>
@@ -1040,6 +859,20 @@
     </p>
   </div>
 </footer>
+
+<!-- ============================ always-reachable contact buttons ============================ -->
+<div class="fabbar" role="complementary" aria-label="Contact Zodiac Tech Soft">
+  <a class="fab fab--wa" href="https://wa.me/919325695631?text=Hi%20Zodiac%20Tech%20Soft%20%E2%80%94%20I%20would%20like%20a%20quote.%20My%20requirement%3A%20"
+     target="_blank" rel="noopener" data-cta="fab-whatsapp" aria-label="Chat with us on WhatsApp — +91 93256 95631">
+    <span class="fab__ico" aria-hidden="true"><svg><use href="#ico-wa"/></svg></span>
+    <span class="fab__label">WhatsApp us</span>
+  </a>
+  <a class="fab fab--call" href="tel:+919325695631" data-cta="fab-call"
+     aria-label="Call Zodiac Tech Soft on +91 93256 95631">
+    <span class="fab__ico" aria-hidden="true"><svg><use href="#ico-phone"/></svg></span>
+    <span class="fab__label">Call +91 93256 95631</span>
+  </a>
+</div>
 
 <a class="mobile-cta" href="contact.html" data-cta="sticky">Start a Project <span aria-hidden="true">→</span></a>
 

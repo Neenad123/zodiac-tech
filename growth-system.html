@@ -19,6 +19,12 @@
 </head>
 <body>
 
+<!-- icon sprite — the real WhatsApp brand glyph + a phone handset, defined once per page -->
+<svg class="svg-sprite" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <symbol id="ico-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+  <symbol id="ico-phone" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></symbol>
+</svg>
+
 <a class="skip" href="#main">Skip to content</a>
 <div class="scroll-progress" aria-hidden="true"><span></span></div>
 <div class="page-grain" aria-hidden="true"></div>
@@ -29,7 +35,8 @@
       <span class="live-dot" aria-hidden="true"></span>
       Software · IT services · digital marketing — since February 2017    </span>
     <span class="topbar__right">
-      <a href="tel:9325695631">📞 +91 93256 95631</a>
+      <a href="tel:+919325695631" class="topbar__wa"><svg class="ico" aria-hidden="true"><use href="#ico-phone"/></svg> +91 93256 95631</a>
+      <a href="https://wa.me/919325695631?text=Hi%20Zodiac%20Tech%20Soft%20%E2%80%94%20I%20would%20like%20a%20quote.%20My%20requirement%3A%20" target="_blank" rel="noopener" class="topbar__wa"><svg class="ico ico--wa" aria-hidden="true"><use href="#ico-wa"/></svg> WhatsApp</a>
       <a href="mailto:sam.andnkar1990@gmail.com">✉ sam.andnkar1990@gmail.com</a>
     </span>
   </div>
@@ -224,7 +231,7 @@
   <div class="wrap">
     <div class="sec__head reveal">
       <p class="kicker">ONBOARDING</p>
-      <h2>From first call to scale, in six steps</h2>
+      <h2>From first call to live, in six steps</h2>
     </div>
     <div class="steps">
               <article class="step reveal">
@@ -278,31 +285,43 @@
         </details>
               <details>
           <summary>What does it cost?</summary>
-          <p class="faq__a">Competitive pricing for the quality delivered. Fixed-price for clear-scoped work; retainer or time-and-material for ongoing engagements. Send us your requirement and you get a transparent quote within 24 hours — no discovery-call gauntlet first.</p>
+          <p class="faq__a">Competitive pricing for the quality delivered, quoted before the work starts. Fixed price for clear-scoped work; retainer or time-and-material when the scope has to move. Send your requirement and you get a transparent, itemised quote within 24 hours — no discovery-call gauntlet first, no obligation.</p>
         </details>
               <details>
           <summary>How long before we see anything?</summary>
-          <p class="faq__a">Timelines the studio already commits to: a logo animation takes 1–2 weeks, a corporate film 3–6 weeks, a full web app or ERP 2–4 months. Every proposal carries a detailed schedule and weekly milestones, and we stick to it.</p>
+          <p class="faq__a">Timelines we already commit to: a logo animation in 1–2 weeks, a corporate film in 3–6 weeks, a website in 3–5 weeks, a full web app or ERP in 2–4 months. Every proposal carries a schedule with weekly milestones, and you see a working demo at the end of each week rather than a status update.</p>
+        </details>
+              <details>
+          <summary>Who owns what you build for us?</summary>
+          <p class="faq__a">You do. Source code, design files, content, hosting credentials and documentation are handed over when the project ships. Nothing we build is designed to lock you into us — you can run it, extend it, or move it in-house at any point.</p>
+        </details>
+              <details>
+          <summary>What happens if something breaks after launch?</summary>
+          <p class="faq__a">Every project includes 30 days of free post-launch support, and we keep running the systems we build. After that, an annual maintenance contract or retainer covers hosting, monitoring, security updates, backups and fixes — with a 24/7 emergency line for anything critical.</p>
+        </details>
+              <details>
+          <summary>Why not hire a freelancer or a cheaper development shop?</summary>
+          <p class="faq__a">For a small one-off, that can be the right call — we will tell you when it is. What you are buying from us is continuity: documented systems, a team that is still answering in year three, and one point of accountability when the website, the hosting, the software and the ads all touch each other.</p>
+        </details>
+              <details>
+          <summary>Can you work within government tender and procurement processes?</summary>
+          <p class="faq__a">We already do. Zilla Parishad, municipal corporations, Chandrapur Police, MAHAGENCO, the Forest Department, Gondwana University and the G20 Nagpur City programme are among our 24+ clients — so documentation, compliance, site surveys and multi-location rollout are routine work for us, not exceptions.</p>
         </details>
               <details>
           <summary>Can you handle both the software and the marketing?</summary>
-          <p class="faq__a">Yes — that is the point of working with us. Software development, IT infrastructure and production AND digital marketing happen under one roof, so the website, the tracking and the campaigns are built by the same team that has to answer for the numbers.</p>
+          <p class="faq__a">Yes — that is the point of working with us. Software, infrastructure and production AND digital marketing happen under one roof, so the website, the tracking and the campaigns are built by the same team that has to answer for the enquiries they produce.</p>
         </details>
               <details>
           <summary>Do you take white-label work from other agencies?</summary>
-          <p class="faq__a">Yes. A large share of our 172+ completed projects was white-label delivery for agencies and consultancies — software, apps, websites, film and 3D production under the partner&#039;s brand. We work to NDAs as standard.</p>
+          <p class="faq__a">Yes. A large share of our 172+ completed projects was white-label delivery for agencies and consultancies — software, apps, websites, film and 3D production under the partner&#039;s brand. We work to NDAs as standard, and your client relationship stays yours.</p>
         </details>
               <details>
           <summary>Do you work with clients outside Maharashtra?</summary>
-          <p class="faq__a">Absolutely. We work with government institutions and private clients across India — Jharkhand, Gujarat, Pune, Nagpur, Mumbai, Bangalore — and internationally. The four-city office network makes in-person meetings easy.</p>
-        </details>
-              <details>
-          <summary>What happens after launch?</summary>
-          <p class="faq__a">Every project includes 30 days of free post-launch support. After that, annual maintenance contracts and retainers cover hosting, monitoring, updates, campaigns and new development — most clients continue on one.</p>
+          <p class="faq__a">Absolutely. We work with government institutions and private clients across India — Jharkhand, Gujarat, Pune, Nagpur, Mumbai, Bangalore — and internationally. Four offices (Chandrapur, Nagpur, Pune, Rajkot) make in-person meetings a short drive rather than a video call with strangers.</p>
         </details>
               <details>
           <summary>How do we start?</summary>
-          <p class="faq__a">Send the form on the contact page or call. You get a reply within 24 hours, then a short working call on your requirement, then a written proposal with scope, timeline and price. No hard pitch, no obligation.</p>
+          <p class="faq__a">Send the form on the contact page, WhatsApp us, or call. You get a reply within 24 hours, then a short working call on your requirement, then a written proposal with scope, timeline and fixed price. If we are not the right fit, we will say so on that call.</p>
         </details>
           </div>
   </div>
@@ -314,11 +333,12 @@
   <div class="finalcta__glow" aria-hidden="true"></div>
   <div class="wrap finalcta__in reveal">
     <p class="kicker">YOUR NEXT PROJECT STARTS HERE</p>
-    <h2 class="finalcta__h">Software, infrastructure and growth —<br><span class="gold-text">run by one team.</span></h2>
-    <p class="lede finalcta__lede">Book a free 30-minute call. Bring the requirement, the system that is slowing you down, or the numbers that are not moving — we will tell you honestly what we would fix first. No hard pitch, no obligation.</p>
+    <h2 class="finalcta__h">Stop managing four vendors.<br><span class="gold-text">Start with one team.</span></h2>
+    <p class="lede finalcta__lede">Book a free 30-minute call or send the requirement on WhatsApp. Bring the system that is slowing you down, the site that is not converting, or the numbers that never moved — you get an honest read on what to fix first, then a written scope and a fixed price within 24 hours.</p>
     <div class="finalcta__btns">
       <a class="btn btn--gold btn--lg" href="contact.html" data-cta="final">Start a Project <span aria-hidden="true">→</span></a>
-      <a class="btn btn--ghost btn--lg" href="tel:9325695631">Call 9325695631</a>
+      <a class="btn btn--wa btn--lg" href="https://wa.me/919325695631?text=Hi%20Zodiac%20Tech%20Soft%20%E2%80%94%20I%20would%20like%20a%20quote.%20My%20requirement%3A%20" target="_blank" rel="noopener" data-cta="final-whatsapp"><svg class="ico ico--wa" aria-hidden="true"><use href="#ico-wa"/></svg> Chat on WhatsApp</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+919325695631" data-cta="final-call"><svg class="ico" aria-hidden="true"><use href="#ico-phone"/></svg> Call +91 93256 95631</a>
     </div>
     <p class="finalcta__micro">
       <span>Reply within 24 hours</span>
@@ -401,6 +421,20 @@
     </p>
   </div>
 </footer>
+
+<!-- ============================ always-reachable contact buttons ============================ -->
+<div class="fabbar" role="complementary" aria-label="Contact Zodiac Tech Soft">
+  <a class="fab fab--wa" href="https://wa.me/919325695631?text=Hi%20Zodiac%20Tech%20Soft%20%E2%80%94%20I%20would%20like%20a%20quote.%20My%20requirement%3A%20"
+     target="_blank" rel="noopener" data-cta="fab-whatsapp" aria-label="Chat with us on WhatsApp — +91 93256 95631">
+    <span class="fab__ico" aria-hidden="true"><svg><use href="#ico-wa"/></svg></span>
+    <span class="fab__label">WhatsApp us</span>
+  </a>
+  <a class="fab fab--call" href="tel:+919325695631" data-cta="fab-call"
+     aria-label="Call Zodiac Tech Soft on +91 93256 95631">
+    <span class="fab__ico" aria-hidden="true"><svg><use href="#ico-phone"/></svg></span>
+    <span class="fab__label">Call +91 93256 95631</span>
+  </a>
+</div>
 
 <a class="mobile-cta" href="contact.html" data-cta="sticky">Start a Project <span aria-hidden="true">→</span></a>
 
