@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# change this host if you attach a different domain
+Sitemap: https://www.zodiactechsoft.in/sitemap.xml
