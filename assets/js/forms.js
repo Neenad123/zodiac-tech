@@ -85,6 +85,13 @@
   }
 
   function success(form) {
+    /* let the tracking layer count the conversion (see assets/js/tracking.js) */
+    window.dispatchEvent(new CustomEvent('zodiac:lead', {
+      detail: {
+        source: form.getAttribute('data-source') || 'contact',
+        type: form.getAttribute('data-consult-form') === 'true' ? 'consultation' : 'lead'
+      }
+    }));
     var card = form.closest('.leadcard') || form;
     var done = document.createElement('div');
     done.className = 'leadform leadform--done';
@@ -99,7 +106,7 @@
   }
 
   function contactFallback(form, reason) {
-    var email = 'sam.andnkar1990@gmail.com';
+    var email = 'hello@zodiactechsoft.com';
     var subject = encodeURIComponent('Website enquiry — ' + (payload(form).name || 'new enquiry'));
     panel(form, 'bad',
       '<strong>We could not submit the form automatically.</strong><br>' +
@@ -149,7 +156,15 @@
             reenable(form);
             return;
           }
-          contactFallback(form, r.json.reason === 'not_configured' ? 'not_configured' : 'network');
+          if (r.json && r.json.reason) {
+            contactFallback(form, r.json.reason === 'not_configured' ? 'not_configured' : 'network');
+            return;
+          }
+
+          /* No JSON came back, so this host has no /api/lead — the PHP build
+             serves this same page and handles the POST itself. Hand the
+             submission back to the browser rather than showing a false error. */
+          form.submit();
         })
         .catch(function () { contactFallback(form, 'network'); });
     });
