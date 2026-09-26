@@ -1176,3 +1176,125 @@ input, select, textarea{ max-width:100%; min-width:0; }
   .topbar a, .hero__talk a{ display:inline-flex; align-items:center; min-height:42px; }
   .site-foot__col a{ display:inline-flex; align-items:center; min-height:34px; }
 }
+
+/* ==========================================================================
+   FRAMEWORK: the section structure of the client's approved sample design
+   --------------------------------------------------------------------------
+   Taken from the sample: centred section heads, four-across problem cards with
+   icon tiles, four colour-coded service categories (icon + checklist + Learn
+   More), text/media split sections, three metric-tile case cards, paired
+   half-width blocks (why Zodiac + how we work, industries + working models),
+   a two-column FAQ, a checklist audit band, a closing CTA band and a
+   four-column footer. Layout only — the palette is untouched, so the site
+   stays gold on ink exactly as approved, and the tones below are the bright
+   variants of the sample's four category colours.
+   ========================================================================== */
+
+:root{
+  --tone-1:#f2b701;   /* Software Development — brand gold */
+  --tone-2:#34d399;   /* Digital Growth */
+  --tone-3:#a78bfa;   /* AI & Automation */
+  --tone-4:#fb923c;   /* Design & Creative */
+}
+.tone-1{--tone:var(--tone-1)} .tone-2{--tone:var(--tone-2)}
+.tone-3{--tone:var(--tone-3)} .tone-4{--tone:var(--tone-4)}
+
+/* ---- centred section heads (the sample centres most of them) ---- */
+.sec__head--center{ text-align:center; }
+.sec__head--center .lede{ margin-inline:auto; max-width:62ch; }
+.sec__cta{ text-align:center; margin-top:2.2rem; }
+
+/* ---- tinted icon tiles ---- */
+.paincard__icon, .whycard__icon, .ind__i{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:38px; height:38px; border-radius:10px; font-size:1.05rem;
+  background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.10);
+  color:var(--tone, var(--gold-light));
+}
+.paincard__icon{ margin-bottom:.8rem; }
+.tone-1 .paincard__icon, .tone-1 .whycard__icon{ background:rgba(242,183,1,.13); border-color:rgba(242,183,1,.34); }
+.tone-2 .paincard__icon, .tone-2 .whycard__icon{ background:rgba(52,211,153,.13); border-color:rgba(52,211,153,.34); }
+.tone-3 .paincard__icon, .tone-3 .whycard__icon{ background:rgba(167,139,250,.14); border-color:rgba(167,139,250,.34); }
+.tone-4 .paincard__icon, .tone-4 .whycard__icon{ background:rgba(251,146,60,.13); border-color:rgba(251,146,60,.34); }
+
+/* ---- the four service categories: tone-coded card, checklist, Learn More ---- */
+.pillar--c1, .pillar--c2, .pillar--c3, .pillar--c4{ border-top:3px solid var(--tone, var(--gold)); }
+.pillar__items span::before{ content:"✓ "; color:var(--tone, var(--gold)); font-weight:700; }
+.pillar__more{
+  display:inline-flex; align-items:center; gap:.4rem; margin-top:1rem;
+  font-family:var(--display); font-weight:600; font-size:.86rem; color:var(--tone, var(--gold));
+}
+.pillar__more:hover{ color:var(--gold-light); text-decoration:underline; }
+
+/* ---- text / media split sections (software, digital marketing) ---- */
+.split{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.08fr); gap:3rem; align-items:center; }
+.split__body{ max-width:46ch; }
+.split__media{ min-width:0; }
+.grid-2{ display:grid; grid-template-columns:1fr 1fr; gap:1.6rem; }
+
+/* ---- paired half-width blocks ---- */
+.pair{ display:grid; grid-template-columns:1fr 1fr; gap:2.6rem 3rem; align-items:start; }
+.pair__col > h2{ font-size:clamp(1.35rem,2.4vw,1.85rem); margin-bottom:1.4rem; }
+.pair .why, .pair .system, .pair .inds, .pair .eng{ grid-template-columns:1fr 1fr; }
+.system--compact .syscard{ padding:1rem 1.1rem; }
+.system--compact .syscard h3{ font-size:.98rem; margin:.5rem 0 .3rem; }
+.system--compact .syscard p{ font-size:.86rem; }
+.system--compact .syscard__gets{ display:none; }
+.eng--compact .engcard{ padding:1.1rem 1.2rem; }
+.eng--compact .engcard p:not(.engcard__for):not(.engcard__note){ display:none; }
+.inds--compact{ grid-template-columns:1fr 1fr; }
+
+/* ---- case cards with metric tiles ---- */
+.cases3{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; align-items:stretch; }
+.outcome--card{ display:block; padding:1.5rem 1.5rem 1.6rem; }
+.outcome--card .outcome__title{ font-size:1.12rem; margin:.6rem 0 .35rem; }
+.outcome--card .outcome__client{ font-size:.82rem; color:var(--muted-2); margin:0 0 1rem; }
+.outcome--card .outcome__body{ font-size:.92rem; margin:0 0 1.1rem; }
+.outcome__case{ display:flex; align-items:center; gap:.6rem; margin-bottom:.5rem; }
+.outcome--card .metrics{ margin:0 0 1.1rem; }
+.metrics{ display:grid; grid-template-columns:1fr 1fr; gap:.7rem; }
+.metric{
+  background:rgba(255,255,255,.04); border:1px solid var(--line);
+  border-radius:var(--r); padding:.7rem .6rem; text-align:center;
+}
+.metric b{ display:block; font-family:var(--display); font-size:1.32rem; font-weight:800; color:var(--gold-light); line-height:1.15; }
+.metric span{ display:block; margin-top:.2rem; font-size:.64rem; letter-spacing:.09em; text-transform:uppercase; color:var(--muted-2); }
+
+/* ---- floating capability chips over the hero panel ---- */
+.hero__media{ position:relative; }
+.hero__chips{ position:absolute; inset:0; pointer-events:none; }
+.chip-float{
+  position:absolute; display:inline-flex; align-items:center; gap:.45rem;
+  font-family:var(--display); font-size:.74rem; font-weight:600; color:var(--silver-2);
+  background:rgba(10,16,28,.86); border:1px solid rgba(255,255,255,.16);
+  border-radius:999px; padding:.45rem .85rem; backdrop-filter:blur(6px);
+  box-shadow:0 22px 44px -24px rgba(0,0,0,.85);
+}
+.chip-float i{ font-style:normal; color:var(--gold-light); }
+.chip-float--a{ top:5%;  left:-16%; }
+.chip-float--b{ top:32%; right:-5%; }
+.chip-float--c{ bottom:26%; left:-13%; }
+
+/* ---- two-column FAQ ---- */
+.faq--2col{ display:grid; grid-template-columns:1fr 1fr; gap:1rem 1.4rem; align-items:start; }
+
+/* ---- the two ink bands the sample closes with ---- */
+.magnet{ background:
+    radial-gradient(700px 320px at 12% 0%, rgba(242,183,1,.18), transparent 62%),
+    linear-gradient(160deg,#0a1220,#04070a 60%); }
+.magnet__checks{ display:grid; grid-template-columns:1fr 1fr; }
+.finalcta{ background:
+    radial-gradient(700px 300px at 88% 0%, rgba(242,183,1,.16), transparent 60%),
+    linear-gradient(160deg,#0a1220,#04070a 60%); }
+
+@media (max-width:1080px){
+  .split{ grid-template-columns:1fr; gap:2rem; }
+  .pair{ grid-template-columns:1fr; gap:2.6rem; }
+  .cases3{ grid-template-columns:1fr 1fr; }
+  .chip-float--a{ top:2%; left:0; } .chip-float--b{ top:auto; bottom:6%; right:0; } .chip-float--c{ display:none; }
+}
+@media (max-width:760px){
+  .faq--2col, .cases3, .grid-2{ grid-template-columns:1fr; }
+  .magnet__checks{ grid-template-columns:1fr; }
+  .chip-float{ font-size:.68rem; padding:.35rem .7rem; }
+}
