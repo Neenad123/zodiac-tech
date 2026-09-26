@@ -1298,3 +1298,8 @@ input, select, textarea{ max-width:100%; min-width:0; }
   .magnet__checks{ grid-template-columns:1fr; }
   .chip-float{ font-size:.68rem; padding:.35rem .7rem; }
 }
+
+/* case cards: equal height, footers aligned (the sample's tiles line up across the row) */
+.outcome--card{ display:flex; flex-direction:column; height:100%; }
+.outcome--card .outcome__body{ flex:1 1 auto; }
+.outcome--card .pillar__more{ margin-top:auto; }
