@@ -18,7 +18,7 @@
  */
 
 const CONTACT = {
-  email: 'hello@zodiactechsoft.com',
+  email: 'zodiactechsoftadmin@gmail.com',
   phone: '+91 93256 95631',
   whatsapp: '919325695631',
 };

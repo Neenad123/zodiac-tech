@@ -106,7 +106,7 @@
   }
 
   function contactFallback(form, reason) {
-    var email = 'hello@zodiactechsoft.com';
+    var email = 'zodiactechsoftadmin@gmail.com';
     var subject = encodeURIComponent('Website enquiry — ' + (payload(form).name || 'new enquiry'));
     panel(form, 'bad',
       '<strong>We could not submit the form automatically.</strong><br>' +

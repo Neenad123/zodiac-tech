@@ -108,7 +108,7 @@ Variables → add → **Redeploy**):
 * **Client logos** — `assets/img/clients/<slug>.png`, 256×256 white tiles. To add one, drop the
   file in and reference it in the roster markup (`work.html`) and the animated wall (`index.html`).
 * **Directors** — `assets/img/founders/*.jpg` (square, 360×360 or larger).
-* **Contact details** — search for `sam.andnkar1990@gmail.com` and `9325695631`.
+* **Contact details** — search for `zodiactechsoftadmin@gmail.com` and `9325695631`.
 * **Colours and type** — the CSS custom properties at the top of `assets/css/style.css`.
 
 ## After attaching a real domain
