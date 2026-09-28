@@ -1303,3 +1303,23 @@ input, select, textarea{ max-width:100%; min-width:0; }
 .outcome--card{ display:flex; flex-direction:column; height:100%; }
 .outcome--card .outcome__body{ flex:1 1 auto; }
 .outcome--card .pillar__more{ margin-top:auto; }
+
+/* ---- logo wall: each logo now carries the client's name beneath it ---- */
+.clienttile{
+  flex:0 0 auto; width:134px; margin-right:1rem; padding-top:.2rem;
+  display:flex; flex-direction:column; align-items:center; gap:.6rem;
+}
+.clienttile .logotile{ margin-right:0; }
+.clienttile__name{
+  font-family:var(--display); font-size:.7rem; font-weight:600; line-height:1.32;
+  letter-spacing:.005em; color:var(--silver-2); text-align:center; max-width:134px;
+  min-height:2.64em;                       /* two lines, so every tile lines up */
+  display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; overflow:hidden;
+  transition:color .3s var(--ease);
+}
+.clienttile:hover .clienttile__name{ color:var(--gold-light); }
+@media (max-width:760px){
+  .clienttile{ width:106px; margin-right:.7rem; gap:.45rem; }
+  .clienttile .logotile{ width:84px; height:84px; padding:9px; border-radius:13px; }
+  .clienttile__name{ font-size:.62rem; max-width:106px; min-height:2.6em; }
+}
