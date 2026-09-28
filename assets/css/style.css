@@ -1323,3 +1323,39 @@ input, select, textarea{ max-width:100%; min-width:0; }
   .clienttile .logotile{ width:84px; height:84px; padding:9px; border-radius:13px; }
   .clienttile__name{ font-size:.62rem; max-width:106px; min-height:2.6em; }
 }
+
+/* ==========================================================================
+   Mobile typography pass
+   --------------------------------------------------------------------------
+   The step cards lived two-to-a-row inside the paired sections, which on a
+   phone left ~150px per card: the number+label row could not fit, so labels
+   were clipped at the card edge ("PRODUCTIC") or wrapped and pushed the
+   heading out of line. Fix: one card per row on phones, and a top row that
+   wraps instead of overflowing.
+   ========================================================================== */
+.syscard__top{
+  flex-wrap:wrap; align-items:center; justify-content:flex-start;
+  gap:.5rem .7rem; min-width:0;
+}
+.syscard__no{ flex:0 0 auto; }
+.syscard__name{
+  flex:1 1 auto; min-width:0; text-align:left; line-height:1.25;
+  letter-spacing:.14em; overflow-wrap:anywhere;
+}
+.system--compact .syscard__top{ margin-bottom:.1rem; }
+
+@media (max-width:760px){
+  .pair .why, .pair .system, .pair .eng{ grid-template-columns:1fr; }
+  .system--compact .syscard, .eng--compact .engcard{ padding:1.15rem 1.2rem; }
+  .system--compact .syscard__no{ font-size:1.9rem; }
+  .system--compact .syscard__name{ font-size:.7rem; letter-spacing:.1em; }
+  .pair__col > h2{ font-size:1.5rem; }
+  .sec__head--center .lede, .split__body{ max-width:none; }
+  .whycard h3, .syscard h3{ font-size:1.02rem; }
+  .whycard p, .syscard p{ font-size:.9rem; }
+}
+@media (max-width:430px){
+  .inds--compact{ grid-template-columns:1fr; }
+  .metric b{ font-size:1.2rem; }
+  .pillar__items span{ font-size:.78rem; }
+}
