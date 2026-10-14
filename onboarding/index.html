@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>ZodiacTech | Professional Client Onboarding</title>
+<style>
+:root{--p:#2563eb;--pd:#1d4ed8;--bg:#f5f7fb;--card:#fff;--txt:#111827;--muted:#667085;--border:#e5e7eb;--side:#111827;--side2:#1f2937}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--txt)}
+.app{min-height:100vh;display:flex}.sidebar{position:fixed;left:0;top:0;bottom:0;width:265px;background:var(--side);color:#fff;padding:22px 18px}
+.brand{display:flex;gap:11px;align-items:center;padding:5px 8px 24px;border-bottom:1px solid #293548}.logo{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,#2563eb,#06b6d4);display:grid;place-items:center;font-weight:800}.brand b{font-size:15px}.brand small{display:block;color:#94a3b8;margin-top:2px}
+.steps{margin-top:24px}.step{display:flex;align-items:center;gap:11px;padding:12px 9px;border-radius:9px;color:#aeb9c9;margin:5px 0}.step.active{background:var(--side2);color:#fff}.step.done{color:#86efac}.num{width:29px;height:29px;border:1px solid #475569;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700}.active .num{background:var(--p);border-color:var(--p)}
+.main{margin-left:265px;width:calc(100% - 265px)}.top{height:70px;background:#fff;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 34px}.top h2{font-size:18px;margin:0}.tag{font-size:12px;font-weight:700;background:#eff6ff;color:#1d4ed8;padding:7px 12px;border-radius:20px}
+.wrap{max-width:1080px;margin:30px auto;padding:0 24px}.title h1{font-size:28px;margin:0 0 5px}.title p{margin:0 0 25px;color:var(--muted)}
+.panel{display:none}.panel.active{display:block}.card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:27px;margin-bottom:18px;box-shadow:0 3px 14px rgba(16,24,40,.04)}.card h3{margin:0 0 5px;font-size:17px}.desc{font-size:13px;color:var(--muted);margin-bottom:21px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.full{grid-column:1/-1}.field label{display:block;font-size:13px;font-weight:650;margin-bottom:7px}.req{color:#dc2626}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid #d0d5dd;border-radius:8px;background:#fff;font:inherit;font-size:14px;outline:none}textarea{min-height:100px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:var(--p);box-shadow:0 0 0 3px rgba(37,99,235,.10)}
+.radio{display:flex;gap:20px;margin-top:10px}.radio label{font-weight:400;display:flex;align-items:center;gap:7px}.radio input{width:auto}
+.actions{display:flex;justify-content:space-between;margin:24px 0 50px}button{border:0;border-radius:8px;padding:12px 22px;font-weight:700;cursor:pointer;font-size:14px}.back{background:#fff;border:1px solid var(--border);color:#374151}.next,.submit{background:var(--p);color:#fff}.next:hover,.submit:hover{background:var(--pd)}button:disabled{opacity:.6}
+.summary{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.summary div{background:#f8fafc;border-radius:8px;padding:11px}.summary b{display:block;color:var(--muted);font-size:11px;margin-bottom:3px}
+.success{display:none;background:#ecfdf3;border:1px solid #abefc6;color:#067647;text-align:center;border-radius:12px;padding:35px}.success h2{margin-top:0}
+.mobile{display:none}
+@media(max-width:800px){.sidebar{display:none}.main{margin-left:0;width:100%}.top{padding:0 16px}.wrap{padding:0 14px;margin-top:20px}.grid,.summary{grid-template-columns:1fr}.mobile{display:block;background:#fff;border-bottom:1px solid var(--border);padding:11px 15px;color:var(--muted);font-size:13px}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+<div class="brand"><div class="logo">ZT</div><div><b>ZodiacTech</b><small>Software & IT Services Pvt. Ltd.</small></div></div>
+<div class="steps">
+<div class="step active"><span class="num">1</span>Client & Contact</div>
+<div class="step"><span class="num">2</span>Professional Profile</div>
+<div class="step"><span class="num">3</span>Business Details</div>
+<div class="step"><span class="num">4</span>Digital Presence</div>
+<div class="step"><span class="num">5</span>Marketing & Leads</div>
+<div class="step"><span class="num">6</span>Brand & Content</div>
+<div class="step"><span class="num">7</span>Review & Submit</div>
+</div>
+</aside>
+
+<main class="main">
+<header class="top"><h2>Professional Client Onboarding</h2><span class="tag">ZodiacTech Internal System</span></header>
+<div class="mobile" id="mobileStep">Step 1 of 7 — Client & Contact</div>
+<div class="wrap">
+<div class="title"><h1>Client Onboarding</h1><p>Complete the professional profile to help ZodiacTech plan digital presence, content, advertising and lead generation.</p></div>
+
+<form id="form">
+
+<section class="panel active" data-step="1">
+<div class="card"><h3>Client & Contact Information</h3><div class="desc">Basic information applicable to every type of client.</div>
+<div class="grid">
+<div class="field"><label>Client / Organisation Name <span class="req">*</span></label><input name="client_name" required></div>
+<div class="field"><label>Primary Contact Person <span class="req">*</span></label><input name="contact_person" required></div>
+<div class="field"><label>Mobile / Contact Number <span class="req">*</span></label><input name="mobile" required></div>
+<div class="field"><label>Email Address</label><input type="email" name="email"></div>
+<div class="field"><label>Client Type <span class="req">*</span></label><select name="client_type" required><option value="">Select</option><option>Doctor / Healthcare Professional</option><option>Advocate / Legal Professional</option><option>Engineer</option><option>Architect / Interior Designer</option><option>CA / Finance Professional</option><option>Consultant</option><option>Real Estate Professional</option><option>Education / Trainer</option><option>Business / Company</option><option>Retail / E-commerce</option><option>Hospital / Clinic</option><option>NGO / Organisation</option><option>Other Professional</option></select></div>
+<div class="field"><label>City / Location</label><input name="city"></div>
+<div class="field full"><label>Complete Office / Business Address</label><textarea name="address"></textarea></div>
+</div></div>
+<div class="actions"><span></span><button type="button" class="next">Continue →</button></div>
+</section>
+
+<section class="panel" data-step="2">
+<div class="card"><h3>Professional Profile</h3><div class="desc">Use this section for doctors, advocates, engineers, architects, consultants and all other professionals.</div>
+<div class="grid">
+<div class="field"><label>Professional / Owner Full Name</label><input name="professional_name"></div>
+<div class="field"><label>Designation / Role</label><input name="designation"></div>
+<div class="field"><label>Profession / Specialization</label><input name="profession"></div>
+<div class="field"><label>Qualifications / Certifications</label><input name="qualifications"></div>
+<div class="field"><label>Years of Experience</label><input name="experience"></div>
+<div class="field"><label>Professional Registration / Licence No. (if applicable)</label><input name="registration"></div>
+<div class="field full"><label>Professional Services / Areas of Expertise</label><textarea name="expertise"></textarea></div>
+<div class="field full"><label>Top 3 Services / Areas You Want to Promote</label><textarea name="top_services"></textarea></div>
+</div></div>
+<div class="actions"><button type="button" class="back">← Back</button><button type="button" class="next">Continue →</button></div>
+</section>
+
+<section class="panel" data-step="3">
+<div class="card"><h3>Business / Organisation Details</h3><div class="desc">Information used for positioning, website and campaign planning.</div>
+<div class="grid">
+<div class="field"><label>Business / Firm / Organisation Name</label><input name="business_name"></div>
+<div class="field"><label>Established Year</label><input name="established_year"></div>
+<div class="field"><label>Office / Working Hours</label><input name="working_hours"></div>
+<div class="field"><label>Service Area / Operating Locations</label><input name="service_area"></div>
+<div class="field full"><label>About the Business / Organisation</label><textarea name="about"></textarea></div>
+<div class="field full"><label>Key USPs / Why should customers choose you?</label><textarea name="usp"></textarea></div>
+<div class="field full"><label>Target Customer / Audience</label><textarea name="target_audience"></textarea></div>
+</div></div>
+<div class="actions"><button type="button" class="back">← Back</button><button type="button" class="next">Continue →</button></div>
+</section>
+
+<section class="panel" data-step="4">
+<div class="card"><h3>Digital Presence</h3><div class="desc">Enter existing online profiles. Do not enter passwords.</div>
+<div class="grid">
+<div class="field"><label>Website</label><input type="url" name="website"></div>
+<div class="field"><label>Google Business / Maps Link</label><input type="url" name="google_business"></div>
+<div class="field"><label>Instagram Profile</label><input type="url" name="instagram"></div>
+<div class="field"><label>Facebook Page</label><input type="url" name="facebook"></div>
+<div class="field"><label>LinkedIn Profile / Company Page</label><input type="url" name="linkedin"></div>
+<div class="field"><label>YouTube Channel</label><input type="url" name="youtube"></div>
+<div class="field"><label>Other Social / Directory Link</label><input type="url" name="other_social"></div>
+<div class="field"><label>Google Business Access</label><div class="radio"><label><input type="radio" name="gbp_access" value="Yes">Yes</label><label><input type="radio" name="gbp_access" value="No">No</label></div></div>
+</div></div>
+<div class="actions"><button type="button" class="back">← Back</button><button type="button" class="next">Continue →</button></div>
+</section>
+
+<section class="panel" data-step="5">
+<div class="card"><h3>Marketing, Advertising & Lead Generation</h3><div class="desc">Capture the client's commercial marketing requirements.</div>
+<div class="grid">
+<div class="field"><label>Primary Marketing Goal</label><select name="goal"><option value="">Select</option><option>WhatsApp Leads</option><option>Phone Calls</option><option>Website Leads</option><option>Walk-in / Store Visits</option><option>Brand Awareness</option><option>Professional Visibility</option><option>Enquiries / Appointments</option><option>Other</option></select></div>
+<div class="field"><label>Existing Meta Ads Account?</label><div class="radio"><label><input type="radio" name="meta_account" value="Yes">Yes</label><label><input type="radio" name="meta_account" value="No">No</label></div></div>
+<div class="field"><label>Meta Ad Account ID</label><input name="meta_ad_id"></div>
+<div class="field"><label>Approx. Monthly Ad Budget</label><input name="ad_budget"></div>
+<div class="field full"><label>Target Location / Market</label><textarea name="target_location"></textarea></div>
+<div class="field"><label>Lead Handling Person</label><input name="lead_handler"></div>
+<div class="field"><label>Lead / WhatsApp Contact</label><input name="lead_contact"></div>
+<div class="field full"><label>Competitors / Similar Businesses (if known)</label><textarea name="competitors"></textarea></div>
+</div></div>
+<div class="actions"><button type="button" class="back">← Back</button><button type="button" class="next">Continue →</button></div>
+</section>
+
+<section class="panel" data-step="6">
+<div class="card"><h3>Brand, Content & Creative Requirements</h3><div class="desc">Information required for content creation and social media management.</div>
+<div class="grid">
+<div class="field"><label>Preferred Content Language</label><select name="language"><option>English</option><option>Hindi</option><option>Marathi</option><option>English + Hindi</option><option>English + Marathi</option><option>English + Hindi + Marathi</option><option>Other</option></select></div>
+<div class="field"><label>Comfortable Appearing in Videos?</label><div class="radio"><label><input type="radio" name="video" value="Yes">Yes</label><label><input type="radio" name="video" value="No">No</label></div></div>
+<div class="field full"><label>Logo / Brand Assets Google Drive Link</label><input type="url" name="logo_link"></div>
+<div class="field full"><label>Brand Guidelines / Colours / Preferred Style</label><textarea name="brand_style"></textarea></div>
+<div class="field full"><label>Topics / Services / Products to Focus On</label><textarea name="content_focus"></textarea></div>
+<div class="field full"><label>Any Restrictions, Compliance Requirements or Topics to Avoid?</label><textarea name="restrictions"></textarea></div>
+<div class="field full"><label>Additional Information</label><textarea name="additional_info"></textarea></div>
+</div></div>
+<div class="actions"><button type="button" class="back">← Back</button><button type="button" class="next">Review →</button></div>
+</section>
+
+<section class="panel" data-step="7">
+<div class="card"><h3>Review & Submit</h3><div class="desc">Review the basic information before submitting the onboarding record.</div><div class="summary" id="summary"></div></div>
+<div class="card"><h3>ZodiacTech Internal Assignment</h3>
+<div class="grid">
+<div class="field"><label>Assigned Employee</label><input name="assigned_employee"></div>
+<div class="field"><label>Onboarding Status</label><select name="status"><option>Pending</option><option>In Progress</option><option>Completed</option><option>On Hold</option></select></div>
+<div class="field full"><label>Internal Notes</label><textarea name="internal_notes"></textarea></div>
+</div></div>
+<div class="actions"><button type="button" class="back">← Back</button><button type="submit" class="submit">Submit Onboarding ✓</button></div>
+</section>
+</form>
+<div class="success" id="success"><h2>Onboarding Submitted Successfully</h2><p>The information has been received by ZodiacTech Software & IT Services Pvt. Ltd.</p></div>
+</div>
+</main></div>
+
+<script>
+const SCRIPT_URL="https://script.google.com/macros/s/AKfycbykihOQ_SaufiYpmxYyp20jrLfgQrA4jZG0Kk3A0XzCcOCvyUmYFxSSy3nKBnXv0sPp6w/exec";
+const panels=[...document.querySelectorAll(".panel")],steps=[...document.querySelectorAll(".step")];
+let current=1;
+const names=["Client & Contact","Professional Profile","Business Details","Digital Presence","Marketing & Leads","Brand & Content","Review & Submit"];
+function show(n){current=n;panels.forEach(x=>x.classList.toggle("active",+x.dataset.step===n));steps.forEach((x,i)=>{x.classList.toggle("active",i+1===n);x.classList.toggle("done",i+1<n)});document.getElementById("mobileStep").textContent=`Step ${n} of 7 — ${names[n-1]}`;scrollTo({top:0,behavior:"smooth"});if(n===7)summary()}
+function summary(){let f=new FormData(document.getElementById("form"));let a=[["Client",f.get("client_name")],["Contact",f.get("contact_person")],["Client Type",f.get("client_type")],["Professional",f.get("professional_name")],["Profession",f.get("profession")],["Business",f.get("business_name")],["City",f.get("city")],["Primary Goal",f.get("goal")],["Target Market",f.get("target_location")],["Language",f.get("language")]];document.getElementById("summary").innerHTML=a.map(x=>`<div><b>${x[0]}</b>${x[1]||"—"}</div>`).join("")}
+document.querySelectorAll(".next").forEach(b=>b.onclick=()=>{if(current<7)show(current+1)});
+document.querySelectorAll(".back").forEach(b=>b.onclick=()=>{if(current>1)show(current-1)});
+document.getElementById("form").onsubmit=async e=>{e.preventDefault();if(SCRIPT_URL==="https://script.google.com/macros/s/AKfycbykihOQ_SaufiYpmxYyp20jrLfgQrA4jZG0Kk3A0XzCcOCvyUmYFxSSy3nKBnXv0sPp6w/exec"){alert("Connect the Google Apps Script Web App URL first.");return}let b=document.querySelector(".submit");b.disabled=true;b.textContent="Submitting...";try{await fetch(SCRIPT_URL,{method:"POST",body:new FormData(e.target)});e.target.style.display="none";document.getElementById("success").style.display="block";scrollTo({top:0,behavior:"smooth"})}catch(err){alert("Submission failed. Please try again.");b.disabled=false;b.textContent="Submit Onboarding ✓"}};
+</script>
+</body>
+</html>
